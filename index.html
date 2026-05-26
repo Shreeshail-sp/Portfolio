@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shreeshail Shivppa Padadali - Computer Science Engineer | DevOps & Cloud Enthusiast | AI/ML Developer. Portfolio showcasing projects, skills, and experience." />
+    <meta name="keywords" content="Shreeshail Padadali, Portfolio, DevOps, AI, Machine Learning, Python, Cloud, AWS, CMR Institute" />
+    <meta name="author" content="Shreeshail Shivppa Padadali" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shreeshail Shivppa Padadali — Portfolio" />
+    <meta property="og:description" content="Computer Science Engineer | DevOps & Cloud | AI/ML Developer" />
+    <meta property="og:type" content="website" />
+
+    <title>Shreeshail Padadali — Portfolio</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='Arial' font-weight='bold' fill='%237c3aed'%3ES%3C/text%3E%3C/svg%3E" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-mark">SP</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    Available for Internship Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Shreeshail</span>
+                    <br />
+                    <span class="hero-typing">
+                        <span id="typedText"></span><span class="cursor-blink">|</span>
+                    </span>
+                </h1>
+                <p class="hero-description">
+                    Computer Science undergraduate building real-world solutions with
+                    <strong>DevOps</strong>, <strong>Cloud</strong>, and <strong>AI</strong>.
+                    Currently containerizing backend services and shipping CI/CD pipelines on AWS.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Shreeshail-sp" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shreeshail-padadali/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.kaggle.com/" target="_blank" rel="noopener" aria-label="Kaggle" class="social-link">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                    <a href="mailto:shreeshailx@gmail.com" aria-label="Email" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">shreeshail@portfolio: ~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> whoami</p>
+                        <p class="output">Shreeshail Shivppa Padadali</p>
+                        <p><span class="prompt">$</span> cat role.txt</p>
+                        <p class="output">DevOps Intern @ Avijo</p>
+                        <p><span class="prompt">$</span> ls skills/</p>
+                        <p class="output">python  docker  aws-ecs  langchain  ml</p>
+                        <p><span class="prompt">$</span> echo $STATUS</p>
+                        <p class="output success">[OK] Open to opportunities</p>
+                        <p><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">01 / About</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">A glimpse into who I am and what drives me</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <p>
+                        I'm a passionate <strong>Computer Science undergraduate</strong> at
+                        <strong>CMR Institute of Technology, Bengaluru</strong>, eager to take on
+                        real-world challenges and contribute meaningfully to impactful projects.
+                    </p>
+                    <p>
+                        I'm a quick learner with a strong interest in building practical solutions
+                        and working in team-driven environments. I love bridging the gap between
+                        development and operations — whether that's automating CI/CD pipelines,
+                        containerizing applications, or building intelligent systems with LLMs.
+                    </p>
+                    <p>
+                        Currently, I'm working as a <strong>DevOps Intern at Avijo</strong>,
+                        where I deploy real services to AWS ECS and ship features that thousands of
+                        users will eventually rely on.
+                    </p>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-code"></i></div>
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Cloud Services</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Years CSE</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">02 / Skills</span>
+                <h2 class="section-title">Tech <span class="gradient-text">Arsenal</span></h2>
+                <p class="section-subtitle">Tools, languages, and frameworks I work with</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #3776ab, #4b8bbe);">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">OOP</span>
+                        <span class="tag">C</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52);">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & GenAI</h3>
+                    <div class="skill-tags">
+                        <span class="tag">LLMs</span>
+                        <span class="tag">RAG Pipelines</span>
+                        <span class="tag">OpenAI APIs</span>
+                        <span class="tag">LangChain</span>
+                        <span class="tag">FAISS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Supervised</span>
+                        <span class="tag">Unsupervised</span>
+                        <span class="tag">Model Evaluation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Data Cleaning</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">EDA</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>NLP</h3>
+                    <div class="skill-tags">
+                        <span class="tag">NLTK</span>
+                        <span class="tag">Tokenization</span>
+                        <span class="tag">Text Preprocessing</span>
+                        <span class="tag">VADER</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>DevOps & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">AWS ECS</span>
+                        <span class="tag">Amazon ECR</span>
+                        <span class="tag">IAM</span>
+                        <span class="tag">CloudWatch</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #ec4899, #be185d);">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>CI/CD & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">Postman</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #14b8a6, #0d9488);">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQL Joins</span>
+                        <span class="tag">Queries</span>
+                        <span class="tag">Data Retrieval</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #f43f5e, #e11d48);">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Communication</span>
+                        <span class="tag">Client Interaction</span>
+                        <span class="tag">Presentation</span>
+                        <span class="tag">Teamwork</span>
+                        <span class="tag">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">03 / Experience</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                <p class="section-subtitle">Where I've been making an impact</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>DevOps Intern</h3>
+                                <h4 class="company">Avijo <span class="separator">•</span> <span class="location">Remote</span></h4>
+                            </div>
+                            <span class="timeline-date">Apr 2026 — Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Containerized backend applications using <strong>Docker</strong> and deployed services on <strong>AWS ECS</strong>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Built automated <strong>CI/CD pipelines</strong> with GitHub Actions and integrated <strong>Amazon ECR</strong> for deployments
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Monitored deployments, tested APIs using <strong>Postman</strong>, and managed cloud services like <strong>ECS, IAM, and CloudWatch</strong>
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">AWS ECS</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">Amazon ECR</span>
+                            <span class="tag">CloudWatch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">04 / Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A selection of projects I'm proud of</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-emoji">📈</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Shreeshail-sp" target="_blank" rel="noopener" class="overlay-btn" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-year">2024</span>
+                            <span class="project-category">NLP / Data Science</span>
+                        </div>
+                        <h3>Airbnb Sentiment Analysis</h3>
+                        <p>
+                            Implemented an end-to-end sentiment analysis pipeline to score Airbnb
+                            listings by review polarity (range: −1 to 1) to aid listing prioritization
+                            and decision-making. Applied NLTK VADER for review and phrase-level
+                            sentiment, producing structured insights and summary metrics for stakeholders.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLTK</span>
+                            <span class="tag">VADER</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">EDA</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-emoji">🤖</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Shreeshail-sp" target="_blank" rel="noopener" class="overlay-btn" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-year">2024 — 2025</span>
+                            <span class="project-category">GenAI / RAG</span>
+                        </div>
+                        <h3>FinBot: News Research Tool</h3>
+                        <p>
+                            Built an LLM-powered financial news research system implementing
+                            retrieval-augmented generation to surface accurate, source-backed answers
+                            for analysts. Developed ingestion pipelines with advanced text splitting
+                            and OpenAI embeddings; implemented FAISS vector index for sub-second
+                            semantic retrieval.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">FAISS</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/Shreeshail-sp" target="_blank" rel="noopener" class="btn btn-ghost">
+                    <i class="fab fa-github"></i> View More on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">05 / Education</span>
+                <h2 class="section-title">Education & <span class="gradient-text">Learning</span></h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot edu-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>B.E. in Computer Science and Engineering</h3>
+                                <h4 class="company">CMR Institute of Technology <span class="separator">•</span> <span class="location">Bengaluru, Karnataka</span></h4>
+                            </div>
+                            <span class="timeline-date">2022 — 2026 (Expected)</span>
+                        </div>
+                        <p>
+                            Pursuing a Bachelor's degree in Computer Science and Engineering with a focus on
+                            software development, AI/ML, cloud computing, and data structures.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot edu-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Pre-University (Science)</h3>
+                                <h4 class="company">Ambika PU College <span class="separator">•</span> <span class="location">Puttur, Karnataka</span></h4>
+                            </div>
+                            <span class="timeline-date">2020 — 2022</span>
+                        </div>
+                        <p>
+                            Completed Pre-University education with a strong foundation in Physics, Chemistry,
+                            Mathematics, and Computer Science.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot edu-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>SSLC (10th Standard)</h3>
+                                <h4 class="company">Shri Sharada English Medium High School <span class="separator">•</span> <span class="location">Muddebihal, Karnataka</span></h4>
+                            </div>
+                            <span class="timeline-date">2019 — 2020</span>
+                        </div>
+                        <p>
+                            Completed secondary schooling, building a foundation in core academic disciplines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications & Achievements -->
+            <div class="achievements-wrapper">
+                <h3 class="sub-section-title">
+                    <i class="fas fa-trophy"></i> Certifications & Achievements
+                </h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+                        <h4>Prompt Engineering</h4>
+                        <p>Columbia University</p>
+                        <span class="achievement-date">May 2025</span>
+                    </div>
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon"><i class="fas fa-building"></i></div>
+                        <h4>Bangalore Tech Summit 2024</h4>
+                        <p>Industrial Visit — Explored AI, Cloud, and Data Engineering trends</p>
+                        <span class="achievement-date">2024</span>
+                    </div>
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon"><i class="fas fa-baseball-ball"></i></div>
+                        <h4>Cricket & Volleyball</h4>
+                        <p>Active player — teamwork, discipline, and leadership</p>
+                        <span class="achievement-date">Extracurricular</span>
+                    </div>
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h4>NSS Volunteer</h4>
+                        <p>Organized digital literacy drives & exam-awareness sessions</p>
+                        <span class="achievement-date">Community</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">06 / Contact</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Have an opportunity or just want to chat? I'd love to hear from you.</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:shreeshailx@gmail.com" class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>shreeshailx@gmail.com</p>
+                    <span class="contact-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="tel:+918277220852" class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <p>+91 82772 20852</p>
+                    <span class="contact-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/shreeshail-padadali/" target="_blank" rel="noopener" class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                    <span class="contact-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="https://github.com/Shreeshail-sp" target="_blank" rel="noopener" class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>Check out my code</p>
+                    <span class="contact-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="https://www.kaggle.com/" target="_blank" rel="noopener" class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fab fa-kaggle"></i></div>
+                    <h3>Kaggle</h3>
+                    <p>Data Science & ML profile</p>
+                    <span class="contact-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Brookfield, Bengaluru 560037</p>
+                </div>
+            </div>
+
+            <div class="contact-cta glass-card">
+                <h3>Ready to start a conversation?</h3>
+                <p>I'm open to internship opportunities, collaborations, and interesting projects.</p>
+                <a href="mailto:shreeshailx@gmail.com?subject=Hello%20Shreeshail" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send me an Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-mark">SP</span>
+                    <p>Shreeshail Shivppa Padadali</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Shreeshail-sp" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shreeshail-padadali/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.kaggle.com/" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                    <a href="mailto:shreeshailx@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-text">
+                    Designed & built with <i class="fas fa-heart" style="color: #ec4899;"></i> by Shreeshail
+                    <br />
+                    <span>&copy; <span id="year"></span> All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
