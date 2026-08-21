@@ -119,8 +119,6 @@ Look for these URLs in `index.html` and replace if needed:
 - GitHub: `https://github.com/Shreeshail-sp`
 - LinkedIn: `https://www.linkedin.com/in/shreeshail-padadali/`
 - Kaggle: `https://www.kaggle.com/`
-- Email: `shreeshailx@gmail.com`
-- Phone: `+91 82772 20852`
 
 ---
 
