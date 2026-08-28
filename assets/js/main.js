@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SHREESHAIL PADADALI — PORTFOLIO
+   SHREESHAIL S P — DATA ENGINEER PORTFOLIO
    Main JavaScript
    ========================================================================== */
 
@@ -160,11 +160,11 @@
         if (!target) return;
 
         const phrases = [
-            'Computer Science Engineer',
-            'DevOps Intern @ Avijo',
-            'AI / GenAI Developer',
-            'Cloud & DevOps Enthusiast',
-            'Problem Solver'
+            'Data Engineer Intern @ NeoStats',
+            'ETL & Data Pipeline Builder',
+            'Azure & Microsoft Fabric',
+            'Python · SQL · Power BI',
+            'Computer Science Engineer'
         ];
 
         let phraseIndex = 0;

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SHREESHAIL PADADALI — PORTFOLIO
+   SHREESHAIL S P — DATA ENGINEER PORTFOLIO
    Modern, glassmorphic, dark-first design
    ========================================================================== */
 
@@ -287,6 +287,12 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.nav-resume {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    border-radius: 100px;
 }
 
 .theme-toggle {
@@ -947,8 +953,10 @@ ul { list-style: none; }
     inset: 0;
     background: rgba(10, 10, 20, 0.7);
     backdrop-filter: blur(4px);
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
     opacity: 0;
     transition: opacity var(--transition);
 }
@@ -1347,6 +1355,8 @@ ul { list-style: none; }
     }
 
     .nav-toggle { display: flex; }
+
+    .nav-resume { display: none; }
 
     .section { padding: 70px 0; }
     .section-header { margin-bottom: 48px; }
