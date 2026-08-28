@@ -1,17 +1,23 @@
-# Shreeshail Padadali — Portfolio
+# Shreeshail S P — Data Engineer Portfolio
 
-A modern, fast, and fully responsive personal portfolio website built with pure HTML, CSS, and vanilla JavaScript — designed to live on GitHub Pages forever, with zero build steps and zero dependencies that can break.
+Personal resume portfolio for **Shreeshail S P**, Data Engineer Intern at NeoStats. Built with pure HTML, CSS, and vanilla JavaScript for GitHub Pages — no build step.
 
 [![Pages](https://img.shields.io/badge/GitHub-Pages-7c3aed?style=flat-square&logo=github)](https://shreeshail-sp.github.io/Portfolio/)
 [![License](https://img.shields.io/badge/License-MIT-06b6d4?style=flat-square)](#license)
 
 ---
 
+## About
+
+This site is the public version of the NeoStats-focused resume: ETL pipelines, Azure, Microsoft Fabric, Python, SQL, Power BI, and the retail medallion-architecture project.
+
 ## Features
 
+- **Resume-aligned content** — experience, skills, projects, certifications, and leadership from the latest CV
+- **Downloadable PDF resume** in `assets/resume/`
 - **Dark + Light theme** with persistence via `localStorage`
 - **Glassmorphism UI** with animated gradient blobs and grid background
-- **Hero section** with animated typing effect and 3D terminal mockup
+- **Hero section** with animated typing effect and terminal mockup
 - **Smooth scroll** navigation with active-link highlighting
 - **Scroll-triggered reveal animations** using `IntersectionObserver`
 - **Animated stat counters**
@@ -34,8 +40,10 @@ Portfolio/
 └── assets/
     ├── css/
     │   └── style.css       # All styles
-    └── js/
-        └── main.js         # All interactivity
+    ├── js/
+    │   └── main.js         # All interactivity
+    └── resume/
+        └── Shreeshail_SP_Resume.pdf
 ```
 
 ---
@@ -110,6 +118,7 @@ All content lives in `index.html`. To update:
 | Projects                | `index.html` → `<section id="projects">`                 |
 | Education / certs       | `index.html` → `<section id="education">`                |
 | Contact links           | `index.html` → `<section id="contact">` and footer       |
+| Resume PDF              | `assets/resume/Shreeshail_SP_Resume.pdf`                 |
 | Theme colours           | `assets/css/style.css` → `:root { --primary, --accent }` |
 
 ### Updating Social Links
@@ -117,7 +126,7 @@ All content lives in `index.html`. To update:
 Look for these URLs in `index.html` and replace if needed:
 
 - GitHub: `https://github.com/Shreeshail-sp`
-- LinkedIn: `https://www.linkedin.com/in/shreeshail-padadali/`
+- LinkedIn: `https://www.linkedin.com/in/shreeshailsp`
 - Kaggle: `https://www.kaggle.com/`
 - Email: `shreeshailx@gmail.com`
 - Phone: `+91 82772 20852`
@@ -142,10 +151,10 @@ Works on all modern browsers (Chrome, Firefox, Edge, Safari) and is fully respon
 
 ## License
 
-MIT © Shreeshail Shivppa Padadali
+MIT © Shreeshail S P
 
 You're welcome to fork this and adapt it for your own portfolio. A link back is appreciated but not required.
 
 ---
 
-Built with care by **Shreeshail Padadali**.
+Built with care by **Shreeshail S P**.
